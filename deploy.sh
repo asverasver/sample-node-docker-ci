@@ -8,4 +8,4 @@ docker stop web || true
 docker rm web || true
 docker rmi asverasver/sample-node:current || true
 docker tag asverasver/sample-node:latest asverasver/sample-node:current
-docker run -d --net lab6net --restart always --name web -p 80:80 asverasver/sample-node:current
+docker run -d --restart always --name web -p 80:80 asverasver/sample-node:current
