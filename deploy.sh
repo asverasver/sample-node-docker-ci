@@ -2,7 +2,7 @@
 #docker build -t asverasver/sample-node .
 docker push asverasver/sample-node
 
-ssh deploy@104.198.161.225
+ssh deploy@104.199.86.163
 docker pull asverasver/sample-node:latest
 docker stop web || true
 docker rm web || true
