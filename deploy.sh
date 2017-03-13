@@ -1,6 +1,6 @@
 #!/bin/bash
 #docker build -t asverasver/sample-node .
-#docker push asverasver/sample-node
+docker push asverasver/sample-node
 
 ssh deploy@104.198.161.225
 docker pull asverasver/sample-node:latest
