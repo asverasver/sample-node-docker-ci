@@ -1,15 +1,3 @@
-machine:
-  services:
-    - docker
-
-dependencies:
-  override:
-    - docker build -t asverasver/sample-node .
-
-test:
-  override:
-    - docker run asverasver/sample-node npm test
-
 deployment:
   production:
     branch: master
